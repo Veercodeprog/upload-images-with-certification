@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/upload-images-with-certification-backend"
+]
+resolver = "2"
