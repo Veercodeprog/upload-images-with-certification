@@ -1,21 +1,13 @@
 {
   "canisters": {
-    "upload-images-with-certification-backend": {
-      "candid": "src/upload-images-with-certification-backend/upload-images-with-certification-backend.did",
-      "package": "upload-images-with-certification-backend",
-      "type": "rust"
-    },
-    "upload-images-with-certification-frontend": {
-      "dependencies": [
-        "upload-images-with-certification-backend"
-      ],
-      "source": [
-        "src/upload-images-with-certification-frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "upload-images-with-certification-frontend"
+    "asset_proxy": {
+      "type": "rust",
+      "package": "asset_proxy",
+      "wasm": "target/wasm32-unknown-unknown/release/asset_proxy.wasm",
+      "candid": "src/asset_proxy/asset_proxy.did"
     }
   },
+
   "defaults": {
     "build": {
       "args": "",
@@ -25,3 +17,4 @@
   "output_env_file": ".env",
   "version": 1
 }
+

@@ -1,0 +1,38 @@
+[package]
+name = "asset_proxy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ic-cdk-timers = "0.10" # Feel free to remove this dependency if you don't need timers
+candid = "0.10.4"
+base64 = "0.13.0"
+hex = "0.4.3"
+ic-cdk = "0.13.1"
+ic-certification = "2.3.0"
+ic-response-verification = "2.3.0"
+ic-representation-independent-hash = "2.3.0"
+percent-encoding = "2.3.1"
+itertools = "0.10.3"
+num-traits = "0.2.14"
+serde = "1.0"
+serde_bytes = "0.11.5"
+serde_cbor = "0.11.1"
+serde_json = "1.0.79"
+sha2 = "0.10.6"
+
+
+
+[dev-dependencies]
+ic-http-certification = "2.3.0"
+candid_parser = "0.1.4"
+anyhow = "1.0.56"
+ic-response-verification-test-utils = { git = "https://github.com/dfinity/response-verification.git", rev = "a65009624b61736df6d2dc17756bdbd02a84f599" }
+ic-certification-testing = { git = "https://github.com/dfinity/response-verification.git", rev = "a65009624b61736df6d2dc17756bdbd02a84f599" }
+ic-crypto-tree-hash = { git = "https://github.com/dfinity/ic.git", rev = "1290256484f59c3d950c5e9a098e97383b248ad6" }
+

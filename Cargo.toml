@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "src/upload-images-with-certification-backend"
+    "src/asset_proxy"
 ]
 resolver = "2"
